@@ -1,0 +1,33 @@
+/* Navbar */
+
+.nav-bar {
+  padding: 0.5rem 2rem;
+  background-color: var(--white);
+}
+
+.nav-bar .nav-brand {
+  font-size: 1.75rem;
+}
+
+.nav-bar .nav-search > *,
+.nav-bar .nav-action > * {
+  font-size: 1rem;
+}
+
+.nav-search input {
+  padding: 0.25rem 0.5rem;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 700px) {
+  .nav-bar .nav-search {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .nav-bar .nav-action .icon {
+    display: none;
+  }
+}
