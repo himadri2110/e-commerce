@@ -1,0 +1,24 @@
+/* Footer */
+
+footer {
+  display: flex;
+  align-items: center;
+  padding: 0.75rem 2rem;
+  background-color: var(--bg-secondary);
+}
+
+footer .author {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: var(--text-secondary);
+}
+
+footer .social-icons {
+  margin-left: auto;
+}
+
+.social-icons i {
+  margin-left: 1rem;
+  font-size: 1.2rem;
+  color: var(--text-secondary);
+}
