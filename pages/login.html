@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- CDN of Component Library -->
+    <link
+      rel="stylesheet"
+      href="https://capture-ui.netlify.app/css/components.css"
+    />
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="/css/login-signup.css" />
+
+    <!-- Font Awesome -->
+    <script src="https://use.fontawesome.com/f9281fa301.js"></script>
+
+    <title>Login | Loafer</title>
+  </head>
+  <body>
+    <!-- Navbar/Header -->
+
+    <nav class="nav-bar">
+      <a href="/index.html" class="nav-brand">Loafer</a>
+
+      <div class="nav-search input input-primary">
+        <input type="text" placeholder="Search" />
+      </div>
+
+      <div class="nav-action">
+        <a href="" class="btn btn-primary">Login</a>
+
+        <a href="" class="icon">
+          <i class="fa fa-heart"></i>
+          <span class="badge">0</span>
+        </a>
+
+        <a href="" class="icon">
+          <i class="fa fa-shopping-cart"></i>
+          <span class="badge">0</span>
+        </a>
+      </div>
+    </nav>
+
+    <section class="login-container">
+      <!-- Text only card -->
+
+      <div class="card-wrapper basic-card card-text-only">
+        <div>
+          <div class="card-heading">Log In</div>
+        </div>
+
+        <div class="card-content">
+          <form class="form-group">
+            <div class="input-group input input-primary">
+              <label class="input-label">Email</label>
+              <input type="email" placeholder="Type here..." required />
+            </div>
+            <div class="input-group input input-primary">
+              <label class="input-label">Password</label>
+              <input type="password" placeholder="Type here..." required />
+            </div>
+
+            <div class="input-group input-checkbox">
+              <input type="checkbox" />
+              <label class="input-label">Remember Me</label>
+            </div>
+
+            <a href="#" class="link-primary forgot-pwd"
+              ><div class="primary">Forgot Password?</div></a
+            >
+
+            <button class="btn btn-primary" type="submit">Log In</button>
+          </form>
+        </div>
+
+        <div class="card-action">
+          <a href="/pages/signup.html" class="new-acc">Create New Account</a>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
