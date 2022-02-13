@@ -88,7 +88,6 @@ main {
   background-color: var(--bg-secondary);
   padding: 0.5rem;
   border-radius: 50%;
-  fill: var(--bg-secondary);
 }
 
 /* MEDIA QUERIES */
