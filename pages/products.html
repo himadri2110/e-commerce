@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- CDN of Component Library -->
+    <link
+      rel="stylesheet"
+      href="https://capture-ui.netlify.app/css/components.css"
+    />
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="/css/products.css" />
+
+    <!-- Font Awesome -->
+    <script src="https://use.fontawesome.com/f9281fa301.js"></script>
+
+    <title>Products | Loafer</title>
+  </head>
+  <body>
+    <!-- Navbar/Header -->
+
+    <nav class="nav-bar">
+      <a href="/index.html" class="nav-brand">Loafer</a>
+
+      <div class="nav-search input input-primary">
+        <input type="text" placeholder="Search" />
+      </div>
+
+      <div class="nav-action">
+        <a href="/pages/login.html" class="btn btn-primary">Login</a>
+
+        <a href="" class="icon">
+          <i class="fa fa-heart"></i>
+          <span class="badge">0</span>
+        </a>
+
+        <a href="" class="icon">
+          <i class="fa fa-shopping-cart"></i>
+          <span class="badge">0</span>
+        </a>
+      </div>
+    </nav>
+
+    <main class="product-container">
+      <aside class="product-sidebar">
+        <div class="title">
+          <div class="heading-3">Filters</div>
+          <a class="clear-filter">Clear</a>
+        </div>
+
+        <div class="filters">
+          <div class="filter-wrapper">
+            <div class="filter-title">Price</div>
+            <div class="filter-value">
+              <div class="filter-price">
+                <span>&#8377; 500</span>
+                <span> &#8377; 5000 </span>
+              </div>
+              <input type="range" min="500" max="5000" value="2500" />
+            </div>
+          </div>
+
+          <div class="filter-wrapper">
+            <div class="filter-title">Category</div>
+            <div class="filter-value filter-category">
+              <label><input type="checkbox" /> Men</label>
+              <label><input type="checkbox" /> Women</label>
+              <label><input type="checkbox" /> Kids</label>
+            </div>
+          </div>
+
+          <div class="filter-wrapper">
+            <div class="filter-title">Rating</div>
+            <div class="filter-value filter-rating">
+              <label
+                ><input type="radio" name="rating" checked /> 4 stars &
+                above</label
+              >
+              <label
+                ><input type="radio" name="rating" /> 3 stars & above</label
+              >
+              <label
+                ><input type="radio" name="rating" /> 2 stars & above</label
+              >
+              <label><input type="radio" name="rating" /> 1 star & above</label>
+            </div>
+          </div>
+
+          <div class="filter-wrapper">
+            <div class="filter-title">Sort By</div>
+            <div class="filter-value filter-sort">
+              <label
+                ><input type="radio" name="sort" checked /> Price - High to
+                Low</label
+              >
+              <label
+                ><input type="radio" name="sort" /> Price - Low to High</label
+              >
+            </div>
+          </div>
+        </div>
+      </aside>
+
+      <section class="product-wrapper">
+        <div class="heading-3">Showing all Products</div>
+
+        <section class="product-main">
+          <div class="card-wrapper basic-card card-w-dismiss">
+            <div>
+              <img src="/assets/heels 2.jpg" class="card-img" alt="Heels" />
+              <div class="card-dismiss"><i class="fa fa-heart-o"></i></div>
+
+              <div class="card-heading">Women Stylish Pencil Heel Sandal</div>
+            </div>
+
+            <div class="card-content">
+              <div class="product-price">
+                <div class="price">&#8377; 699</div>
+                <div class="previous-price">&#8377; 1499</div>
+              </div>
+              <div class="discount">53% off</div>
+            </div>
+
+            <div class="card-action">
+              <button class="btn btn-primary">Add to Cart</button>
+            </div>
+          </div>
+
+          <div class="card-wrapper basic-card card-w-dismiss">
+            <div>
+              <img src="/assets/heels 2.jpg" class="card-img" alt="Heels" />
+              <div class="card-dismiss"><i class="fa fa-heart-o"></i></div>
+
+              <div class="card-heading">Women Stylish Pencil Heel Sandal</div>
+            </div>
+
+            <div class="card-content">
+              <div class="product-price">
+                <div class="price">&#8377; 699</div>
+                <div class="previous-price">&#8377; 1499</div>
+              </div>
+              <div class="discount">53% off</div>
+            </div>
+
+            <div class="card-action">
+              <button class="btn btn-primary">Add to Cart</button>
+            </div>
+          </div>
+
+          <div class="card-wrapper basic-card card-w-dismiss">
+            <div>
+              <img src="/assets/heels 2.jpg" class="card-img" alt="Heels" />
+              <div class="card-dismiss"><i class="fa fa-heart-o"></i></div>
+
+              <div class="card-heading">Women Stylish Pencil Heel Sandal</div>
+            </div>
+
+            <div class="card-content">
+              <div class="product-price">
+                <div class="price">&#8377; 699</div>
+                <div class="previous-price">&#8377; 1499</div>
+              </div>
+              <div class="discount">53% off</div>
+            </div>
+
+            <div class="card-action">
+              <button class="btn btn-primary">Add to Cart</button>
+            </div>
+          </div>
+
+          <div class="card-wrapper basic-card card-w-dismiss">
+            <div>
+              <img src="/assets/heels 2.jpg" class="card-img" alt="Heels" />
+              <div class="card-dismiss"><i class="fa fa-heart-o"></i></div>
+
+              <div class="card-heading">Women Stylish Pencil Heel Sandal</div>
+            </div>
+
+            <div class="card-content">
+              <div class="product-price">
+                <div class="price">&#8377; 699</div>
+                <div class="previous-price">&#8377; 1499</div>
+              </div>
+              <div class="discount">53% off</div>
+            </div>
+
+            <div class="card-action">
+              <button class="btn btn-primary">Add to Cart</button>
+            </div>
+          </div>
+
+          <div class="card-wrapper basic-card card-w-dismiss">
+            <div>
+              <img src="/assets/heels 2.jpg" class="card-img" alt="Heels" />
+              <div class="card-dismiss"><i class="fa fa-heart-o"></i></div>
+
+              <div class="card-heading">Women Stylish Pencil Heel Sandal</div>
+            </div>
+
+            <div class="card-content">
+              <div class="product-price">
+                <div class="price">&#8377; 699</div>
+                <div class="previous-price">&#8377; 1499</div>
+              </div>
+              <div class="discount">53% off</div>
+            </div>
+
+            <div class="card-action">
+              <button class="btn btn-primary">Add to Cart</button>
+            </div>
+          </div>
+
+          <div class="card-wrapper basic-card card-w-dismiss">
+            <div>
+              <img src="/assets/heels 2.jpg" class="card-img" alt="Heels" />
+              <div class="card-dismiss"><i class="fa fa-heart-o"></i></div>
+
+              <div class="card-heading">Women Stylish Pencil Heel Sandal</div>
+            </div>
+
+            <div class="card-content">
+              <div class="product-price">
+                <div class="price">&#8377; 699</div>
+                <div class="previous-price">&#8377; 1499</div>
+              </div>
+              <div class="discount">53% off</div>
+            </div>
+
+            <div class="card-action">
+              <button class="btn btn-primary">Add to Cart</button>
+            </div>
+          </div>
+
+          <div class="card-wrapper basic-card card-w-dismiss">
+            <div>
+              <img src="/assets/heels 2.jpg" class="card-img" alt="Heels" />
+              <div class="card-dismiss"><i class="fa fa-heart-o"></i></div>
+
+              <div class="card-heading">Women Stylish Pencil Heel Sandal</div>
+            </div>
+
+            <div class="card-content">
+              <div class="product-price">
+                <div class="price">&#8377; 699</div>
+                <div class="previous-price">&#8377; 1499</div>
+              </div>
+              <div class="discount">53% off</div>
+            </div>
+
+            <div class="card-action">
+              <button class="btn btn-primary">Add to Cart</button>
+            </div>
+          </div>
+        </section>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <div class="author">Himadri Shah</div>
+      <div class="social-icons">
+        <a href="https://github.com/himadri2110" target="_blank"
+          ><i class="fa fa-github"></i
+        ></a>
+        <a href="https://twitter.com/himadri2110" target="_blank"
+          ><i class="fa fa-twitter"></i
+        ></a>
+        <a href="https://linkedin.com/in/himadri2110" target="_blank"
+          ><i class="fa fa-linkedin"></i
+        ></a>
+      </div>
+    </footer>
+  </body>
+</html>
