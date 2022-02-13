@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+@import url("/css/navbar.css");
+@import url("/css/footer.css");
+
+:root {
+  --bg-grey: rgb(248, 248, 248);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+  color: var(--text-color);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex-grow: 1;
+  margin: 1rem;
+}
+
+.product-wrapper {
+  max-width: 80%;
+  margin: auto;
+}
+
+.product-wrapper .heading-3 {
+  font-size: var(--heading-3);
+  font-weight: bold;
+  text-align: center;
+}
+
+.product-main {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+}
+
+.product-main > * {
+  margin: 0.5rem auto;
+}
+
+/* Card wrapper */
+
+.card-wrapper {
+  border: 1px solid var(--bg-secondary);
+}
+
+.basic-card .card-heading,
+.basic-card .card-content {
+  padding: 0.5rem 0.5rem 0;
+}
+
+.basic-card .card-heading {
+  font-size: 1rem;
+}
+
+.card-content .price {
+  font-size: 1.1rem;
+}
+
+.card-content .previous-price,
+.card-content .discount {
+  font-size: 0.9rem;
+}
+
+.basic-card .card-action {
+  padding: 0.5rem;
+}
+
+.card-action > button {
+  padding: 0.25rem;
+}
+
+.card-w-dismiss .card-dismiss {
+  font-size: 1rem;
+}
+
+.card-w-dismiss .card-dismiss i {
+  background-color: var(--bg-secondary);
+  padding: 0.5rem;
+  border-radius: 50%;
+  fill: var(--bg-secondary);
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 480px) {
+  .product-wrapper {
+    max-width: 90%;
+    margin: auto;
+  }
+}
