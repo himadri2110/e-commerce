@@ -12,12 +12,12 @@
     />
 
     <!-- Stylesheet -->
-    <link rel="stylesheet" href="/css/login-signup.css" />
+    <link rel="stylesheet" href="/css/forget-pwd.css" />
 
     <!-- Font Awesome -->
     <script src="https://use.fontawesome.com/f9281fa301.js"></script>
 
-    <title>Login | Loafer</title>
+    <title>Forget Password | Loafer</title>
   </head>
   <body>
     <!-- Navbar/Header -->
@@ -44,41 +44,26 @@
       </div>
     </nav>
 
-    <section class="login-container">
+    <section class="pwd-container">
       <!-- Text only card -->
 
-      <div class="card-wrapper basic-card card-text-only">
+      <div class="card-wrapper basic-card">
         <div>
-          <div class="card-heading">Log In</div>
+          <div class="card-heading heading-3">Reset Password</div>
         </div>
 
-        <div class="card-content">
-          <form class="form-group">
-            <div class="input-group input input-primary">
-              <label class="input-label">Email</label>
-              <input type="email" placeholder="Type here..." required />
-            </div>
-            <div class="input-group input input-primary">
-              <label class="input-label">Password</label>
-              <input type="password" placeholder="Type here..." required />
-            </div>
+        <form class="form-group">
+          <div class="input-group input input-primary">
+            <label class="input-label">Email*</label>
+            <input type="email" placeholder="Type here..." required />
+          </div>
 
-            <div class="input-group input-checkbox">
-              <input type="checkbox" />
-              <label class="input-label">Remember Me</label>
-            </div>
+          <div class="sub-heading">
+            *You will recieve a reset link on the email address entered above.
+          </div>
 
-            <a href="/pages/forget-pwd.html" class="link-primary forgot-pwd"
-              ><div class="primary">Forgot Password?</div></a
-            >
-
-            <button class="btn btn-primary" type="submit">Log In</button>
-          </form>
-        </div>
-
-        <div class="card-action">
-          <a href="/pages/signup.html" class="new-acc">Create New Account</a>
-        </div>
+          <button class="btn btn-primary" type="submit">Send Reset Link</button>
+        </form>
       </div>
     </section>
 

@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+@import url("/css/navbar.css");
+@import url("/css/footer.css");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+  color: var(--text-color);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Login */
+
+.pwd-container {
+  margin: 2rem;
+  flex-grow: 1;
+}
+
+.card-wrapper {
+  margin: auto;
+  padding: 1rem;
+  max-width: 400px;
+  border: 1px solid var(--bg-secondary);
+}
+
+.card-heading {
+  text-align: center;
+  padding: 0;
+}
+
+/* Form */
+
+.pwd-container .input-group {
+  margin: 0.5rem 0;
+}
+
+.pwd-container label {
+  font-size: 0.9rem;
+  line-height: var(--line-ht-5);
+}
+
+.pwd-container input,
+.pwd-container button {
+  font-size: 1rem;
+  padding: 0.25rem 0.5rem;
+}
+
+.pwd-container button {
+  margin-top: 1rem;
+}
+
+.pwd-container .sub-heading {
+  font-size: 0.8rem;
+}
