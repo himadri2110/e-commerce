@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- CDN of Component Library -->
+    <link
+      rel="stylesheet"
+      href="https://capture-ui.netlify.app/css/components.css"
+    />
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="/css/cart.css" />
+
+    <!-- Font Awesome -->
+    <script src="https://use.fontawesome.com/f9281fa301.js"></script>
+
+    <title>Cart | Loafer</title>
+  </head>
+  <body>
+    <!-- Navbar/Header -->
+
+    <nav class="nav-bar">
+      <a href="/index.html" class="nav-brand">Loafer</a>
+
+      <div class="nav-search input input-primary">
+        <input type="text" placeholder="Search" />
+      </div>
+
+      <div class="nav-action">
+        <a href="/pages/login.html" class="btn btn-primary">Login</a>
+
+        <a href="" class="icon">
+          <i class="fa fa-heart"></i>
+          <span class="badge">0</span>
+        </a>
+
+        <a href="" class="icon">
+          <i class="fa fa-shopping-cart"></i>
+          <span class="badge">0</span>
+        </a>
+      </div>
+    </nav>
+
+    <main class="cart-container">
+      <section class="cart-wrapper">
+        <div class="heading-3">My Cart (<span class="quantity">2</span>)</div>
+
+        <section class="cart-main">
+          <div class="cart-product">
+            <div class="card-wrapper basic-card card-horizontal">
+              <div class="row">
+                <img src="/assets/heels 2.jpg" class="card-img" alt="Heels" />
+
+                <div class="card-heading">
+                  Women Stylish Pencil Heel Sandal with Trendy Colour
+
+                  <div class="card-content">
+                    <div class="price">&#8377; 699</div>
+
+                    <div class="card-quantity">
+                      Quantity: <button class="minus">-</button>
+                      <input type="text" value="1" readonly />
+                      <button class="plus">+</button>
+                    </div>
+                  </div>
+
+                  <button class="btn btn-primary">Move to Wishlist</button>
+                  <button class="btn outline-primary">Remove from Cart</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="card-wrapper basic-card card-horizontal">
+              <div class="row">
+                <img src="/assets/heels 2.jpg" class="card-img" alt="Heels" />
+
+                <div class="card-heading">
+                  Women Stylish Pencil Heel Sandal with Trendy Colour
+
+                  <div class="card-content">
+                    <div class="price">&#8377; 699</div>
+
+                    <div class="card-quantity">
+                      Quantity: <span class="minus">-</span>
+                      <input type="text" value="1" readonly />
+                      <span class="plus">+</span>
+                    </div>
+                  </div>
+
+                  <button class="btn btn-primary">Move to Wishlist</button>
+                  <button class="btn outline-primary">Remove from Cart</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="cart-price">
+            <div class="title heading-3">Price Details</div>
+
+            <hr />
+
+            <div class="sub-price">
+              <div class="price">
+                <div class="text">
+                  Price (<span class="quantity">2</span> items)
+                </div>
+                <div class="value">&#8377; 1398</div>
+              </div>
+
+              <div class="price">
+                <div class="text">Discount</div>
+                <div class="value">- &#8377; 499</div>
+              </div>
+
+              <div class="price">
+                <div class="text">Delivery Charges</div>
+                <div class="value">&#8377; 49</div>
+              </div>
+            </div>
+
+            <hr />
+
+            <div class="total-price">
+              <div class="text">Total Amount</div>
+              <div class="value">&#8377; 948</div>
+            </div>
+
+            <hr />
+
+            <div class="discount-msg">
+              You will save &#8377; 499 on this order
+            </div>
+            <button class="btn btn-dark btn-icon">
+              Place order
+              <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+            </button>
+          </div>
+        </section>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <div class="author">Himadri Shah</div>
+      <div class="social-icons">
+        <a href="https://github.com/himadri2110" target="_blank"
+          ><i class="fa fa-github"></i
+        ></a>
+        <a href="https://twitter.com/himadri2110" target="_blank"
+          ><i class="fa fa-twitter"></i
+        ></a>
+        <a href="https://linkedin.com/in/himadri2110" target="_blank"
+          ><i class="fa fa-linkedin"></i
+        ></a>
+      </div>
+    </footer>
+  </body>
+</html>
