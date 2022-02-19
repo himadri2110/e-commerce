@@ -49,8 +49,35 @@ body {
   height: 100%;
 }
 
+.hero-content a {
+  display: block;
+}
+
 .primary {
   color: var(--primary-color);
+}
+
+/* Services */
+
+.services-category {
+  margin: 2.5rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  place-items: center;
+  text-align: center;
+}
+
+.services-category .service {
+  margin: 1rem 0;
+}
+
+.service .icon {
+  color: var(--primary-color);
+  font-size: 2.5rem;
+}
+
+.service .sub-heading {
+  color: var(--text-secondary);
 }
 
 /* Category */

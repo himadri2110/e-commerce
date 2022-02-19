@@ -11,6 +11,9 @@
       href="https://capture-ui.netlify.app/css/components.css"
     />
 
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="/assets/favicon.png" type="image/x-icon" />
+
     <!-- Stylesheet -->
     <link rel="stylesheet" href="/css/index.css" />
 
@@ -30,16 +33,18 @@
       </div>
 
       <div class="nav-action">
-        <a href="/pages/login.html" class="btn btn-primary">Login</a>
+        <a href="/pages/login.html" class="icon login" title="Login"
+          ><i class="fa fa-sign-in"></i><span>Login</span></a
+        >
 
-        <a href="" class="icon">
+        <a href="/pages/wishlist.html" class="icon" title="Wishlist">
           <i class="fa fa-heart"></i>
-          <span class="badge">0</span>
+          <span class="badge">4</span>
         </a>
 
-        <a href="" class="icon">
+        <a href="/pages/cart.html" class="icon" title="Cart">
           <i class="fa fa-shopping-cart"></i>
-          <span class="badge">0</span>
+          <span class="badge">2</span>
         </a>
       </div>
     </nav>
@@ -57,6 +62,35 @@
           <a href="/pages/products.html" class="hero-action">
             <button class="btn btn-primary">Shop Now</button>
           </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="services-category">
+      <div class="service">
+        <div class="icon"><i class="fa fa-check-circle"></i></div>
+
+        <div class="text">
+          <div class="heading">Money Guarantee</div>
+          <div class="sub-heading">30 Day Money Back</div>
+        </div>
+      </div>
+
+      <div class="service">
+        <div class="icon"><i class="fa fa-headphones"></i></div>
+
+        <div class="text">
+          <div class="heading">Online Support</div>
+          <div class="sub-heading">Technical Support 24/7</div>
+        </div>
+      </div>
+
+      <div class="service">
+        <div class="icon"><i class="fa fa-credit-card"></i></div>
+
+        <div class="text">
+          <div class="heading">Secure Payments</div>
+          <div class="sub-heading">All Cards Accepted</div>
         </div>
       </div>
     </div>
@@ -81,8 +115,6 @@
         </div>
       </div>
     </div>
-
-    <hr />
 
     <div class="featured-category">
       <div class="heading-2">Featured:</div>
@@ -125,17 +157,49 @@
     </div>
 
     <footer>
-      <div class="author">Himadri Shah</div>
-      <div class="social-icons">
-        <a href="https://github.com/himadri2110" target="_blank"
-          ><i class="fa fa-github"></i
-        ></a>
-        <a href="https://twitter.com/himadri2110" target="_blank"
-          ><i class="fa fa-twitter"></i
-        ></a>
-        <a href="https://linkedin.com/in/himadri2110" target="_blank"
-          ><i class="fa fa-linkedin"></i
-        ></a>
+      <div class="about">
+        <a href="/index.html" class="nav-brand">Loafer</a>
+
+        <div class="text">
+          Shop exclusive stylish and comfortable footwear for all occasions
+        </div>
+
+        <div class="social">
+          <a href="https://github.com/himadri2110" target="_blank"
+            ><i class="fa fa-github"></i
+          ></a>
+          <a href="https://twitter.com/himadri2110" target="_blank"
+            ><i class="fa fa-twitter"></i
+          ></a>
+          <a href="https://linkedin.com/in/himadri2110" target="_blank"
+            ><i class="fa fa-linkedin"></i
+          ></a>
+        </div>
+      </div>
+
+      <div class="quick-links">
+        <div class="heading">Quick Links</div>
+        <div class="sub-heading">
+          <a href="/pages/products.html">Products</a>
+        </div>
+        <div class="sub-heading">
+          <a href="/pages/wishlist.html">Wishlist</a>
+        </div>
+        <div class="sub-heading"><a href="/pages/cart.html">Cart</a></div>
+      </div>
+
+      <div class="contact">
+        <div class="heading">Contact Us</div>
+
+        <div class="sub-heading address">
+          <i class="fa fa-map-marker"></i>212 Oakbrook Center, Indiana
+        </div>
+        <div class="sub-heading phone">
+          <i class="fa fa-phone"></i>+91 21200 21200
+        </div>
+        <div class="sub-heading e-mail">
+          <i class="fa fa-envelope"></i>support@loafer.com
+        </div>
       </div>
     </footer>
   </body>
