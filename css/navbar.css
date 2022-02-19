@@ -27,12 +27,14 @@
   margin: 0 0 0 1.5rem;
 }
 
-.nav-action .login span {
+.nav-action .login span,
+.nav-action .logout span {
   padding-left: 0.5rem;
   font-size: 1rem;
 }
 
-.nav-action .login {
+.nav-action .login,
+.nav-action .logout {
   display: inline-flex;
   align-items: center;
 }
@@ -63,7 +65,8 @@
     margin: 0 0 0 1rem;
   }
 
-  .nav-action .login span {
+  .nav-action .login span,
+  .nav-action .logout span {
     display: none;
   }
 }
