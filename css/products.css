@@ -5,6 +5,7 @@
 
 :root {
   --bg-grey: rgb(248, 248, 248);
+  --box-shadow: 2px 2px 5px 2px var(--bg-color);
 }
 
 * {
@@ -62,7 +63,7 @@ main {
 }
 
 /* Hide filter icon on large screens */
-.product-wrapper button,
+.product-heading button,
 .product-sidebar button {
   display: none;
   padding: 0;
@@ -129,7 +130,10 @@ main {
 /* Section */
 
 .card-wrapper {
-  border: 1px solid var(--bg-secondary);
+  border: 1px solid var(--primary-color);
+  background-color: inherit;
+  box-shadow: var(--box-shadow);
+  cursor: pointer;
 }
 
 .basic-card .card-heading,
@@ -163,10 +167,9 @@ main {
 }
 
 .card-w-dismiss .card-dismiss i {
-  background-color: var(--bg-secondary);
+  color: var(--primary-color);
   padding: 0.5rem;
   border-radius: 50%;
-  fill: var(--bg-secondary);
 }
 
 input.card-dismiss {
