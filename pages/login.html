@@ -33,8 +33,8 @@
       </div>
 
       <div class="nav-action">
-        <a href="/pages/login.html" class="icon login" title="Login"
-          ><i class="fa fa-sign-out"></i><span>Login</span></a
+        <a href="/pages/signup.html" class="icon login" title="SignUp"
+          ><i class="fa fa-sign-in"></i><span>SignUp</span></a
         >
 
         <a href="/pages/wishlist.html" class="icon" title="Wishlist">
@@ -65,24 +65,28 @@
             </div>
             <div class="input-group input input-primary">
               <label class="input-label">Password</label>
-              <input type="password" placeholder="Type here..." required />
+              <div class="toggle-pwd">
+                <input type="password" placeholder="Type here..." required />
+                <i class="fa fa-eye"></i>
+              </div>
             </div>
 
-            <div class="input-group input-checkbox">
-              <input type="checkbox" />
-              <label class="input-label">Remember Me</label>
+            <div class="input-group input-checkbox checkbox-forgetpwd">
+              <label class="input-label"
+                ><input type="checkbox" /> Remember Me</label
+              >
+              <a href="/pages/forget-pwd.html" class="link-primary forgot-pwd"
+                ><span class="primary">Forgot Password?</span></a
+              >
             </div>
-
-            <a href="/pages/forget-pwd.html" class="link-primary forgot-pwd"
-              ><div class="primary">Forgot Password?</div></a
-            >
 
             <button class="btn btn-primary" type="submit">Log In</button>
           </form>
         </div>
 
         <div class="card-action">
-          <a href="/pages/signup.html" class="new-acc">Create New Account</a>
+          <span>New to Loafer?</span>
+          <a href="/pages/signup.html" class="link-primary">SignUp</a>
         </div>
       </div>
     </section>

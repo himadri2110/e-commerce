@@ -28,7 +28,7 @@ body {
 .card-wrapper {
   margin: auto;
   padding: 1rem;
-  max-width: 400px;
+  max-width: 450px;
   border: 1px solid var(--bg-secondary);
 }
 
@@ -49,15 +49,13 @@ body {
   line-height: var(--line-ht-5);
 }
 
-.login-container input {
+.login-container input,
+.login-container button {
   font-size: 1rem;
   padding: 0.25rem 0.5rem;
 }
 
 .login-container .input-checkbox {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
   line-height: var(--line-ht-5);
 }
 
@@ -70,10 +68,13 @@ body {
 
 .login-container .input-checkbox label {
   font-size: 0.9rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
-.card-action {
-  padding-top: 0;
+.card-action > * {
+  font-size: 0.9rem;
 }
 
 .card-content a.forgot-pwd {
@@ -85,12 +86,45 @@ body {
   background-color: inherit;
 }
 
-.card-action a.new-acc {
-  display: block;
-  margin-top: 0.5rem;
-  text-align: center;
+.card-action a.link-primary {
+  padding: 0 0.25rem;
 }
 
 .primary {
   color: var(--primary-color);
+}
+
+.checkbox-forgetpwd {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Toggle Password */
+
+.toggle-pwd {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.toggle-pwd input {
+  width: 100%;
+}
+
+.toggle-pwd i {
+  position: absolute;
+  right: 1rem;
+  z-index: 2;
+  color: var(--primary-color);
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 480px) {
+  .checkbox-forgetpwd {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
