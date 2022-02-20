@@ -101,6 +101,25 @@ body {
   align-items: center;
 }
 
+/* Toggle Password */
+
+.toggle-pwd {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.toggle-pwd input {
+  width: 100%;
+}
+
+.toggle-pwd i {
+  position: absolute;
+  right: 1rem;
+  z-index: 2;
+  color: var(--primary-color);
+}
+
 /* MEDIA QUERIES */
 
 @media screen and (max-width: 480px) {
