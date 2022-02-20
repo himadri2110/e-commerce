@@ -8,6 +8,7 @@
 
 .nav-bar .nav-brand {
   font-size: 1.75rem;
+  margin-right: 0.5rem;
 }
 
 .nav-bar .nav-search > *,
@@ -45,6 +46,11 @@
   .nav-bar > * {
     margin: 0.25rem 0;
   }
+
+  .nav-action .login span,
+  .nav-action .logout span {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -63,10 +69,5 @@
 
   .nav-action a {
     margin: 0 0 0 1rem;
-  }
-
-  .nav-action .login span,
-  .nav-action .logout span {
-    display: none;
   }
 }
