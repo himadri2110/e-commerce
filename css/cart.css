@@ -5,6 +5,7 @@
 
 :root {
   --bg-grey: rgb(248, 248, 248);
+  --box-shadow: 2px 2px 5px 2px var(--bg-color);
 }
 
 * {
@@ -47,14 +48,17 @@ main {
 .cart-main > * {
   background-color: var(--bg-grey);
   border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
 }
 
 /* Card */
 
 .cart-product .card-wrapper {
   max-width: 100%;
-  background-color: var(--bg-color);
-  border: 1px solid var(--bg-secondary);
+  border: 1px solid var(--primary-color);
+  background-color: inherit;
+  box-shadow: var(--box-shadow);
+  cursor: pointer;
 }
 
 .cart-product img {
@@ -99,6 +103,14 @@ main {
 
 .cart-product input:focus {
   outline: none;
+}
+
+.cart-product input[type="number"]::-webkit-inner-spin-button,
+.cart-product input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0;
 }
 
 .cart-product .minus,

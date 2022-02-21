@@ -53,7 +53,13 @@
       <aside class="product-sidebar">
         <div class="title">
           <div class="heading-3">Filters</div>
-          <a class="clear-filter">Clear</a>
+
+          <div class="clear-wrapper">
+            <a class="clear-filter">Clear</a>
+            <button class="btn btn-floating btn-secondary">
+              <i class="fa fa-times"></i>
+            </button>
+          </div>
         </div>
 
         <div class="filters">
@@ -110,13 +116,18 @@
       </aside>
 
       <section class="product-wrapper">
-        <div class="heading-3">Showing all Products</div>
+        <div class="product-heading">
+          <div class="heading-3">Showing all Products</div>
+          <button class="btn btn-floating btn-secondary">
+            <i class="fa fa-filter"></i>
+          </button>
+        </div>
 
         <section class="product-main">
           <div class="card-wrapper basic-card card-w-dismiss">
             <div>
               <img src="/assets/heels 2.jpg" class="card-img" alt="Heels" />
-              <div class="card-dismiss"><i class="fa fa-heart-o"></i></div>
+              <div class="card-dismiss"><i class="fa fa-heart"></i></div>
 
               <div class="card-heading">Women Stylish Pencil Heel Sandal</div>
             </div>
@@ -310,5 +321,7 @@
         </div>
       </div>
     </footer>
+
+    <script src="/scripts/filter-products.js"></script>
   </body>
 </html>

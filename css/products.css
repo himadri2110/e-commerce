@@ -5,6 +5,7 @@
 
 :root {
   --bg-grey: rgb(248, 248, 248);
+  --box-shadow: 2px 2px 5px 2px var(--bg-color);
 }
 
 * {
@@ -54,6 +55,22 @@ main {
 .product-wrapper .heading-3 {
   font-size: var(--heading-3);
   font-weight: bold;
+}
+
+.product-sidebar .clear-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+/* Hide filter icon on large screens */
+.product-heading button,
+.product-sidebar button {
+  display: none;
+  padding: 0;
+}
+
+.product-sidebar button {
+  margin-left: 0.5rem;
 }
 
 .product-sidebar .clear-filter {
@@ -113,7 +130,10 @@ main {
 /* Section */
 
 .card-wrapper {
-  border: 1px solid var(--bg-secondary);
+  border: 1px solid var(--primary-color);
+  background-color: inherit;
+  box-shadow: var(--box-shadow);
+  cursor: pointer;
 }
 
 .basic-card .card-heading,
@@ -147,10 +167,9 @@ main {
 }
 
 .card-w-dismiss .card-dismiss i {
-  background-color: var(--bg-secondary);
+  color: var(--primary-color);
   padding: 0.5rem;
   border-radius: 50%;
-  fill: var(--bg-secondary);
 }
 
 input.card-dismiss {
@@ -169,6 +188,16 @@ input.card-dismiss {
 @media screen and (max-width: 650px) {
   .product-sidebar {
     display: none;
+    padding: 0;
+  }
+
+  .filter-wrapper,
+  .title {
+    padding: 0.5rem 1rem;
+  }
+
+  .product-wrapper {
+    padding: 1rem;
   }
 
   main {
@@ -177,5 +206,41 @@ input.card-dismiss {
 
   .product-main {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+
+  /* Filter */
+
+  .product-wrapper button,
+  .product-sidebar button {
+    display: block;
+  }
+
+  .product-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .product-heading i,
+  .clear-wrapper i {
+    color: var(--primary-color);
+  }
+
+  .show-filter {
+    position: absolute;
+    display: block;
+    width: 100vw;
+    height: 75vh;
+    bottom: 0;
+    left: 0;
+    border-top: 1px solid var(--bg-secondary);
+  }
+
+  .hide-div {
+    display: none;
+  }
+
+  .overflowY-hidden {
+    overflow-y: hidden;
   }
 }
